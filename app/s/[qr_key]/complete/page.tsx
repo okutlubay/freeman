@@ -1,6 +1,8 @@
 // app/s/[qr_key]/complete/page.tsx
 import 'server-only'
 export const dynamic = 'force-dynamic'
+export const revalidate = 0
+export const fetchCache = 'default-no-store'
 
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
